@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  width: 100vw;
+}
+.container > .favinfo {
+  height: 100vh;
+  overflow-y: scroll;
+}
+.container .favinfo {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 50px;
+  background-image: url('./../public/chat-background.png');
+  background-repeat: repeat;
+  background-size:contain;
+}
+

@@ -1,0 +1,55 @@
+ .formWrapper {
+    flex-grow: 1;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formWrapper form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    gap: 1rem;
+    animation-delay: 0.5s;
+    display: none;
+  }
+  
+  @keyframes showForm {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .formWrapper form.active {
+    animation: showForm 0.5s ease-out 0s forwards;
+    display: flex;
+  }
+  
+  
+  .formWrapper h1 {
+    font-size: 3em;
+  }
+  .formWrapper h2 {
+    margin: 0 !important;
+    margin-bottom: 10px;
+  }
+  
+  .formWrapper h1 span {
+    color: #1289fe;
+  }
+  
+  .linkspan {
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
